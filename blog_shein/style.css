@@ -6616,6 +6616,11 @@ footer {
 
 .top_article {
   padding-right: 30px; }
+  .top_article ul li a {
+    text-decoration: none;
+    color: #3e6480; }
+    .top_article ul li a:hover {
+      color: #568cb3; }
   .top_article h2 {
     margin: -11px 0 9px;
     font-family: 'Roboto Slab';
@@ -6677,7 +6682,7 @@ footer {
       line-height: 30px;
       padding: 0 90px 0 118px;
       margin-bottom: 24px;
-      background: url(assets/images/icons/comma1.png) no-repeat 39px top, url(assets/images/icons/comma2.png) no-repeat 749px 45px;
+      background: url(assets/images/icons/comma1.png) no-repeat 39px top, url(assets/images/icons/comma2.png) no-repeat 749px bottom;
       -webkit-background-size: 50px 50px;
               background-size: 50px; }
   .top_article .wp-block-image figure {
@@ -6812,8 +6817,6 @@ footer {
     font-size: 20px;
     line-height: 34px;
     color: #000d1d; }
-  #comments .comment-author-admin .fn {
-    color: #00b906; }
   #comments .comment-author .fn a {
     color: #808080;
     text-decoration: none; }
@@ -7055,7 +7058,7 @@ footer {
     max-width: 100%; }
   .top_article blockquote p {
     padding-right: 100px;
-    background-position: 39px top, 590px 75px; }
+    background-position: 39px top, 590px bottom; }
   .top_article .numbers_of_post {
     right: -20px; }
   .article-carousel {
@@ -7130,7 +7133,7 @@ footer {
   .top_article {
     padding-right: 0; }
     .top_article blockquote p {
-      background-position: 39px top, 646px 75px; }
+      background-position: 39px top, 646px bottom; }
     .top_article .numbers_of_post {
       right: -23px; }
   .article-carousel {
@@ -7201,7 +7204,7 @@ footer {
   /* Персональная страница статьи */
   .top_article blockquote p {
     padding: 0 90px 0 80px;
-    background-position: left top, 449px 104px; }
+    background-position: left top, 449px bottom; }
   .top_article .hashtags {
     max-width: 60%; }
   .top_article .numbers_of_post {
