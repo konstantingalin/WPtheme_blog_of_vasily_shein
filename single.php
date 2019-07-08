@@ -5,7 +5,7 @@
 				<div class="col-xl-9 col-lg-9 col-md-12">
 					<ul class="bread_crumbs">
 						<li><a href="<?php echo home_url(); ?>">Блог Василия Шеин <span>/</span> </a></li>
-						<li><a href="<?php echo home_url() . '/category/'; ?>">Жанры <span>/</span> </a></li>
+						<!--<li><a href="<?php //echo home_url() . '/category/'; ?>">Жанры <span>/</span> </a></li>-->
 						<?php
 							$category = get_the_category(); 
 							echo '<li><a href="' . get_category_link($category[0]->cat_ID) . '">' . $category[0]->cat_name . ' <span>/</span></a></li>';

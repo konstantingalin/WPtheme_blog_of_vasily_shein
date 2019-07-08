@@ -48,6 +48,39 @@ $(function(){
 	});
 	
 	/*  Конец Карусели */
+	
+	/* Карусель */
+	
+	$('.o-bloge-carousel').owlCarousel({
+		loop: false,
+		smartSpeed: 700,
+		nav: true,
+		navText: ['<span></span>', '<span></span>'],
+		responsiveClass: true,
+		margin: 30,
+		responsive: {
+			0: {
+				items: 1
+			},
+			480: {
+				items: 2
+			},
+			668: {
+				items: 2
+			},
+			768: {
+				items: 3
+			},
+			992: {
+				items: 3
+			},
+			1200: {
+				items: 4
+			}
+		}
+	});
+	
+	/*  Конец Карусели */
 
 	/* Скролл-кнопка вверх */
 	

@@ -6685,6 +6685,11 @@ footer {
       background: url(assets/images/icons/comma1.png) no-repeat 39px top, url(assets/images/icons/comma2.png) no-repeat 749px bottom;
       -webkit-background-size: 50px 50px;
               background-size: 50px; }
+  .top_article .wp-block-image a {
+    text-decoration: none;
+    color: #3e6480; }
+    .top_article .wp-block-image a:hover {
+      color: #568cb3; }
   .top_article .wp-block-image figure {
     margin: 30px 0 39px;
     text-align: left; }
@@ -6754,57 +6759,69 @@ footer {
 .article-carousel {
   padding-right: 30px;
   position: relative; }
-  .article-carousel .owl-dots {
-    display: none; }
-  .article-carousel .owl-nav.disabled {
-    display: block; }
-  .article-carousel .owl-prev, .article-carousel .owl-next {
-    outline: none;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    position: absolute;
-    top: -45px;
-    right: 30px; }
-  .article-carousel .owl-prev.disabled span {
+
+.article-carousel .owl-dots, .o-bloge-carousel .owl-dots {
+  display: none; }
+
+.article-carousel .owl-nav.disabled, .o-bloge-carousel .owl-nav.disabled {
+  display: block; }
+
+.article-carousel .owl-prev, .article-carousel .owl-next, .o-bloge-carousel .owl-prev, .o-bloge-carousel .owl-next {
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: -45px;
+  right: 30px; }
+
+.article-carousel .owl-prev.disabled span, .o-bloge-carousel .owl-prev.disabled span {
+  background-image: url(assets/images/icons/arrow_left_slider.svg);
+  border: 1px solid #f0f0f0; }
+  .article-carousel .owl-prev.disabled span:hover, .o-bloge-carousel .owl-prev.disabled span:hover {
+    background-color: #fff;
     background-image: url(assets/images/icons/arrow_left_slider.svg);
     border: 1px solid #f0f0f0; }
-    .article-carousel .owl-prev.disabled span:hover {
-      background-color: #fff;
-      background-image: url(assets/images/icons/arrow_left_slider.svg);
-      border: 1px solid #f0f0f0; }
-  .article-carousel .owl-next.disabled span {
+
+.article-carousel .owl-next.disabled span, .o-bloge-carousel .owl-next.disabled span {
+  background-image: url(assets/images/icons/arrow_right_slider.svg);
+  border: 1px solid #f0f0f0; }
+  .article-carousel .owl-next.disabled span:hover, .o-bloge-carousel .owl-next.disabled span:hover {
+    background-color: #fff;
     background-image: url(assets/images/icons/arrow_right_slider.svg);
     border: 1px solid #f0f0f0; }
-    .article-carousel .owl-next.disabled span:hover {
-      background-color: #fff;
-      background-image: url(assets/images/icons/arrow_right_slider.svg);
-      border: 1px solid #f0f0f0; }
-  .article-carousel .owl-prev span {
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: 13px 13px;
-            background-size: 13px;
-    padding: 4px 15px 5px 15px;
-    border: 1px solid #c8c8c8;
-    background-image: url(assets/images/icons/arrow_left_slider_active.svg);
-    margin-right: 42px; }
-    .article-carousel .owl-prev span:hover {
-      border: 1px solid #00b506;
-      background-color: #00b506;
-      background-image: url(assets/images/icons/arrow_footer_back.svg); }
-  .article-carousel .owl-next span {
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: 13px 13px;
-            background-size: 13px;
-    background-image: url(assets/images/icons/arrow_right_slider_active.svg);
-    padding: 4px 15px 5px 15px;
-    border: 1px solid #c8c8c8; }
-    .article-carousel .owl-next span:hover {
-      border: 1px solid #00b506;
-      background-color: #00b506;
-      background-image: url(assets/images/icons/arrow_footer_active.svg); }
+
+.article-carousel .owl-prev span, .o-bloge-carousel .owl-prev span {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 13px 13px;
+          background-size: 13px;
+  padding: 4px 15px 5px 15px;
+  border: 1px solid #c8c8c8;
+  background-image: url(assets/images/icons/arrow_left_slider_active.svg);
+  margin-right: 42px; }
+  .article-carousel .owl-prev span:hover, .o-bloge-carousel .owl-prev span:hover {
+    border: 1px solid #00b506;
+    background-color: #00b506;
+    background-image: url(assets/images/icons/arrow_footer_back.svg); }
+
+.article-carousel .owl-next span, .o-bloge-carousel .owl-next span {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 13px 13px;
+          background-size: 13px;
+  background-image: url(assets/images/icons/arrow_right_slider_active.svg);
+  padding: 4px 15px 5px 15px;
+  border: 1px solid #c8c8c8; }
+  .article-carousel .owl-next span:hover, .o-bloge-carousel .owl-next span:hover {
+    border: 1px solid #00b506;
+    background-color: #00b506;
+    background-image: url(assets/images/icons/arrow_footer_active.svg); }
+
+.o-bloge-carousel {
+  padding-bottom: 52px; }
+  .o-bloge-carousel .owl-prev, .o-bloge-carousel .owl-next {
+    right: 0px; }
 
 #comments {
   padding: 15px 0 80px; }
@@ -6988,6 +7005,38 @@ footer {
 
 .comment-form-cookies-consent input[type="checkbox"]:checked + label:before {
   background-position: center; }
+
+/*********************/
+/*  Страница о Блоге */
+/*********************/
+.o-bloge {
+  padding-top: 40px; }
+  .o-bloge img[alt="Фото Василий Шеин"] {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin: 0 30px 30px 0; }
+  .o-bloge img[alt="Подпись автора"] {
+    width: 155px;
+    height: auto;
+    position: relative;
+    top: -10px;
+    float: right; }
+  .o-bloge .obh3 {
+    font-family: "Roboto Slab";
+      font-family-font-size: 24px;
+      font-family-line-height: 36px;
+    font-weight: normal;
+    color: #000d1d; }
+  .o-bloge p {
+    font-family: 'Roboto';
+    font-style: italic;
+      font-style-font-size: 16px;
+      font-style-line-height: 30px; }
+  .o-bloge .soc {
+    margin-top: 20px; }
+  .o-bloge .similar_publications {
+    padding-top: 20px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

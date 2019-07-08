@@ -21,7 +21,7 @@
 							<?php get_most_viewed ('post', 3); ?>
 							<?php endif; ?>
 							<div class="watch_all_sidebar">
-								<a href="<?php echo home_url(); ?>">
+								<a href="<?php echo home_url() . '/popular'; ?>">
 									Показать все<?php $count_posts = wp_count_posts(); echo ' ' . $published_posts = $count_posts->publish; ?>
 									
 								</a>

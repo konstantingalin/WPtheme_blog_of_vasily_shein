@@ -51,9 +51,8 @@
 								?>
 								</ul>
 							</li>
-							<li><a href="">Избранное</a></li>
-							<li><a href="">Новое</a></li>
-							<li><a href="">Контакты</a></li>
+							<li><a href="<?php echo home_url() . '/popular'; ?>">Популярные</a></li>
+							<li><a href="<?php echo home_url() . '/o-bloge'; ?>">О блоге</a></li>
 						</ul>
 					</nav>	
 					<nav class="nav_mobile">
@@ -75,9 +74,8 @@
 											?>
 										</ul>
 									</li>
-									<li><a href="">Избранное</a></li>
-									<li><a href="">Новое</a></li>
-									<li><a href="">Контакты</a></li>
+									<li><a href="<?php echo home_url() . '/popular'; ?>">Популярные</a></li>
+									<li><a href="<?php echo home_url() . '/o-bloge'; ?>">О блоге</a></li>
 								</ul>
 							</li>
 						</ul>
